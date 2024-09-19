@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-box"><img src="https://img.freepik.com/free-photo/beautiful-floral-wallpaper_23-2150705752.jpg?t=st=1724403054~exp=1724406654~hmac=08036ec21d13ee1eeb56e5269444ad5c42b29617c8095887f0bf3cd5e0f6ecaf&w=740"</div>
+</body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        min-height: 100vh;
+        animation: animate 1s linear infinite;
+    }
+    @keyframes animate {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg)
+        }
+    }
+    .img-box {
+        width: 500px;
+        height: 450px;
+    }
+    .img-box img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</html>
